@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+:root {
+  --white: hsl(255, 100%, 100%);
+  --slate-300: hsl(212, 45%, 89%);
+  --slate-500: hsl(216, 15%, 48%);
+  --slate-900: hsl(218, 44%, 22%);
+}
+
+/* General style */
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 0.9375rem;
+  background-color: var(--slate-300);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Card Container */
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+  border-radius: 1.25rem;
+  padding: 1rem;
+  max-width: 20rem;
+  text-align: center;
+  box-shadow: 0 0px 25px rgba(0, 0, 0, 0.0477);
+}
+
+/* Image */
+.card-container img {
+  width: 100%;
+  border-radius: 0.625rem;
+}
+
+/* Card Content */
+.card-content {
+  max-width: 16rem;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.card-content h1 {
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: var(--slate-900);
+  line-height: 1.182;
+  margin-bottom: 1rem;
+}
+
+.card-content p {
+  font-weight: 400;
+  color: var(--slate-500);
+  line-height: 1.4;
+  margin-bottom: 1.5rem;
+}
+
+/* Footer */
+footer {
+  position: absolute;
+  transform: translateX(-50%);
+  text-align: center;
+  bottom: 10px;
+  left: 50%;
+  width: 100%;
+  color: var(--slate-500);
+  font-size: 0.75rem;
+}
+
+footer a {
+  color: var(--slate-900);
+  text-decoration: none;
+}
+
+footer a:hover,
+footer a:focus {
+  text-decoration: underline;
+}
+
+/* Focus Styles for Accessibility */
+a:focus {
+  outline: 2px dashed var(--slate-900);
+  outline-offset: 2px;
+}
